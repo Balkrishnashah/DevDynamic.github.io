@@ -3,11 +3,12 @@ html,
 body {
     margin: 0%;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
+    color: var(--text-gray);
 }
 
 :root {
@@ -32,7 +33,7 @@ a {
 }
 
 
-/* navbar */
+/* global */
 
 .flex-row {
     display: flex;
@@ -44,13 +45,44 @@ ul {
     list-style-type: none;
 }
 
+h1 {
+    font-family: var(--Abel);
+    font-size: 2.5rem;
+    color: var(--bg-color);
+}
+
+h2 {
+    font-family: var(--Abel);
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 1rem;
+    font-family: var(--nanum_bold);
+    cursor: pointer;
+}
+
+
+/* ---------navbar-------------- */
+
 .nav {
     background: white;
     padding: 0 2rem;
     height: 0rem;
     min-height: 10vh;
     overflow: hidden;
+    transition: height 1s ease-in-out;
 }
+
+
+/* .brand-name i {
+    font-size: 1.1rem;
+} */
 
 .nav .nav-menu {
     justify-content: space-between;
@@ -75,6 +107,10 @@ ul {
     color: var(--bg-color);
 }
 
+.collapse {
+    height: 30rem;
+}
+
 .nav .nav-items {
     margin: 0;
     display: flex;
@@ -84,7 +120,7 @@ ul {
     padding: 1.6rem 1rem;
     position: relative;
     font-family: var(--Abel);
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .nav .nav-items .nav-link:hover {
@@ -96,9 +132,10 @@ ul {
 }
 
 .nav .nav-brand a {
-    padding: 1rem, 0;
+    font-size: 1.7rem;
+    padding: 1rem 0;
     display: block;
-    font-family: var(--nanum_bold);
+    font-family: var(--Lexend);
     font-size: 1.6rem;
 }
 
@@ -114,6 +151,40 @@ ul {
 /*----x----- end of navbar css ---x---- */
 
 
+/* ------main -------- */
+
+main .site-title {
+    background: url(../img/Add\ a\ heading.jpg);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background {
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1 {
+    margin: 0.3rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: var(--sky1);
+}
+
+main .site-title .btn:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+}
+
+
+/* --------x---main-----x----- */
+
+
 /* viewport less than or equal to 750px */
 
 @media only screen and (max-width:750px) {
@@ -122,7 +193,7 @@ ul {
         flex-direction: column;
     }
     .nav .toggle-collapse {
-        display: inline;
+        display: initial;
     }
 }
 
