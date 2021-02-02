@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Abel;
+    src: url(/assets//fonts/googlefonts/Abel/Abel-Regular.ttf);
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url(/assets//fonts/googlefonts/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Hammersmith;
+    src: url(/assets//fonts/googlefonts/Hammersmith_One/HammersmithOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Julius_Sans;
+    src: url(/assets//fonts/googlefonts/Julius_Sans_One/JuliusSansOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: nanum_bold;
+    src: url(/assets//fonts/googlefonts/Nanum_Myeongjo/NanumMyeongjo-Bold.ttf);
+}
+
+@font-face {
+    font-family: nanum_regular;
+    src: url(/assets//fonts/googlefonts/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf);
+}
